@@ -1,18 +1,27 @@
 version: '3'
 services:
 
-  service_nodejs:
+  expressjs:
     build:
       context: .
       dockerfile: Dockerfile
     networks: 
       express_redis:
     restart: always
+    depends_on: 
+    - redis
     volumes:
       - ./:/app
       - /app/node_modules
     ports:
       - "${APP_PORT}:${APP_PORT}"
+
+  redis:
+    image: redis:alpine
+    networks:
+      express_redis:
+    ports:
+      - "${REDIS_PORT}:${REDIS_PORT}"
 
 networks:
   express_redis:

@@ -3,7 +3,7 @@
 ## How to use
 
 1. install docker and docker compose in your OS
-2. open in terminal 
+2. open in terminal and set to the root folder
 ```sh
 cp .env-sample .env
 ```
