@@ -1,0 +1,23 @@
+{
+  "name": "express-redis-docker",
+  "version": "1.0.0",
+  "description": "expressjs redis with docker",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs",
+    "redis",
+    "docker",
+    "memchaced"
+  ],
+  "author": "firmanjs",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "redis": "^2.8.0"
+  }
+}
