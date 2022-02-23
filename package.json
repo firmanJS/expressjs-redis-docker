@@ -16,7 +16,7 @@
   "author": "firmanjs",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "express": "^4.17.1",
     "redis": "^3.1.1"
   },
